@@ -40,5 +40,10 @@ public class Calculadora {
 		return this.resultado /= valor;
 	}
 	
+	public double Multiplicar(double valor) {
+		//this.incrementaOperacao();
+		return this.resultado *= valor;
+	}
+	
 }
 

@@ -18,9 +18,9 @@ public class TesteCalculadora {
 	@Test
 	public void somaNumerosInteiros() {
 		calculadora.Somar(3);
-		assertEquals(calculadora.getResultado(), 3,0);
+		assertEquals(calculadora.getResultado(), 3, 0);
 		calculadora.Somar(7);
-		assertEquals(calculadora.getResultado(), 10,0);
+		assertEquals(calculadora.getResultado(), 10, 0);
 	}
 	
 	@Test
@@ -51,6 +51,14 @@ public class TesteCalculadora {
 		assertEquals(calculadora.getResultado(), 13, 0);
 	}
 	
+	@Test
+	public void criaCalculadoraComValorInicialEMultiplica() {
+		calculadora = new Calculadora(5);
+		assertEquals(calculadora.getResultado(), 5, 0);
+		calculadora.Multiplicar(10);
+		assertEquals(calculadora.getResultado(), 50, 0);
+	}
+		
 }
 
 
